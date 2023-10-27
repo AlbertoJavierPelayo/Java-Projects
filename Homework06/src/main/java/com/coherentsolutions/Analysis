@@ -1,0 +1,29 @@
+Add elements (ADD):
+
+    The performance of ArrayList is better than LinkedList for adding elements. Because ArrayList uses a dynamically sized
+array to store elements and can add elements to the end of the list with an average time complexity of O(1), while in
+LinkedList, adding to the end involves navigating to the last node, which has a worst-case time complexity of O(n).
+
+Accessing elements (GET):
+
+    ArrayList performs better than LinkedList for accessing specific elements by their index. ArrayList allows constant
+random access (O(1)) through its indexes, while in LinkedList, accessing a specific item involves traversing nodes,
+which has linear time complexity (O(n)) in the worst case. The more elements you have, the more the time increases and
+the more noticeable the difference.
+
+Remove elements (REMOVE):
+
+    When it comes to removing items, LinkedList tends to outperform ArrayList in certain cases. When we remove elements at
+the beginning of the list it is faster in LinkedList due to its linked structure, while in ArrayList, removing an
+element at the beginning requires moving all the remaining elements, which has a time complexity of O(n) and the more
+elements you have the more time difference one has from the other.
+
+    However, when removing elements starting from the end (reverse way), ArrayList can outperform LinkedList due to its
+constant performance to remove the last element.
+
+Overall conclusion:
+
+    The choice between ArrayList and LinkedList depends on which operation is most frequently performed in the code
+implementation. If efficient random access is needed and many access operations have to be performed, ArrayList is more
+suitable. On the other hand, what is needed is to perform many delete operations at the beginning or end of the list,
+LinkedList may be a better choice.
